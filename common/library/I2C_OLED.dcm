@@ -6,4 +6,10 @@ K Jumper SPDT
 F ~
 $ENDCMP
 #
+$CMP Polarity_Select_SMD
+D 3-pole Solder Jumper, pins 1+2 closed/bridged
+K Solder Jumper SPDT
+F ~
+$ENDCMP
+#
 #End Doc Library
