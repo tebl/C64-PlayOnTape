@@ -1,0 +1,2 @@
+# C64 PlayOnTape
+Remember waiting forever for your favourite game to load from tape? Well, now you can return to less stressful days and spend all that time loading from tape - again! Based on the excellent [tapuino](https://github.com/sweetlilmre/tapuino) project, what's provided here is simply my take on a PCB-design.
