@@ -1,2 +1,4 @@
 # C64 PlayOnTape
-Remember waiting forever for your favourite game to load from tape? Well, now you can return to less stressful days and spend all that time loading from tape - again! Based on the excellent [tapuino](https://github.com/sweetlilmre/tapuino) project, what's provided here is simply my take on a PCB-design.
+Remember waiting forever for your favourite game to load from tape? Well, now you can return to less stressful days and spend all that time loading from tape - again! Based on the excellent [tapuino](https://github.com/sweetlilmre/tapuino) project, there's an accompanying [blog](http://sweetlilmre.blogspot.com/search/label/Tapuino) with instruction.
+
+Personally I don't have a head for making prototypes on breadboards and veroboard work, probably my tendency to buy only the cheapest stuff. For that reason I went ahead and designed a little PCB for me to build things on instead, the resulting files are shared in the form of this repository.
