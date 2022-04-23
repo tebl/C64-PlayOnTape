@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name c64_cassette)(type Legacy)(uri ${KIPRJMOD}/../common/library/c64_cassette.lib)(options "")(descr ""))
+  (lib (name mounting)(type Legacy)(uri $KIPRJMOD/../common/library/mounting.lib)(options "")(descr ""))
+)

@@ -175,7 +175,7 @@ U 1 1 5ED8BDDA
 P 7075 3100
 F 0 "JP1" H 7075 3304 50  0000 C CNN
 F 1 "P2_VCC" H 7075 3213 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7075 3100 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7075 3100 50  0001 C CNN
 F 3 "~" H 7075 3100 50  0001 C CNN
 	1    7075 3100
 	1    0    0    -1  
@@ -266,7 +266,7 @@ U 1 1 5ED85DD0
 P 7775 3700
 F 0 "JP2" H 7775 3904 50  0000 C CNN
 F 1 "P1_GND" H 7775 3813 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7775 3700 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7775 3700 50  0001 C CNN
 F 3 "~" H 7775 3700 50  0001 C CNN
 	1    7775 3700
 	1    0    0    -1  

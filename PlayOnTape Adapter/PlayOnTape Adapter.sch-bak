@@ -1,0 +1,250 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "PlayOnTape Adapter"
+Date ""
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Cassette port to IDC-adapter."
+$EndDescr
+$Comp
+L c64_cassette:C64_Cassette_IDC J2
+U 1 1 5EF167B3
+P 4500 3975
+F 0 "J2" V 4450 3975 50  0000 C CNN
+F 1 "PlayOnTape" V 4525 4000 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 4500 3975 50  0001 C CNN
+F 3 "~" H 4500 3975 50  0001 C CNN
+	1    4500 3975
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5EF2A7F5
+P 5050 4625
+F 0 "#PWR01" H 5050 4375 50  0001 C CNN
+F 1 "GND" H 5055 4452 50  0000 C CNN
+F 2 "" H 5050 4625 50  0001 C CNN
+F 3 "" H 5050 4625 50  0001 C CNN
+	1    5050 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M1
+U 1 1 604E62DD
+P 10750 550
+F 0 "M1" H 10750 650 50  0001 C CNN
+F 1 "Mounting" H 10750 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 10750 550 50  0001 C CNN
+F 3 "~" H 10750 550 50  0001 C CNN
+	1    10750 550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M2
+U 1 1 604E7421
+P 10875 550
+F 0 "M2" H 10875 650 50  0001 C CNN
+F 1 "Mounting" H 10875 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 10875 550 50  0001 C CNN
+F 3 "~" H 10875 550 50  0001 C CNN
+	1    10875 550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M3
+U 1 1 604E78AD
+P 11000 550
+F 0 "M3" H 11000 650 50  0001 C CNN
+F 1 "Mounting" H 11000 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 11000 550 50  0001 C CNN
+F 3 "~" H 11000 550 50  0001 C CNN
+	1    11000 550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M4
+U 1 1 604E7CA7
+P 11125 550
+F 0 "M4" H 11125 650 50  0001 C CNN
+F 1 "Mounting" H 11125 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 11125 550 50  0001 C CNN
+F 3 "~" H 11125 550 50  0001 C CNN
+	1    11125 550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L c64_cassette:C64_Cassette_Port J1
+U 1 1 60487E42
+P 6875 3975
+F 0 "J1" V 6025 3550 60  0000 C CNN
+F 1 "C64 Cassette Port" V 6100 3550 60  0000 C CNN
+F 2 "C64_User_Port:C64_User-Port" H 6725 4675 60  0001 C CNN
+F 3 "~" H 6725 2775 60  0001 C CNN
+	1    6875 3975
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 62648A71
+P 5050 3325
+F 0 "#PWR0101" H 5050 3175 50  0001 C CNN
+F 1 "VCC" H 5065 3498 50  0000 C CNN
+F 2 "" H 5050 3325 50  0001 C CNN
+F 3 "" H 5050 3325 50  0001 C CNN
+	1    5050 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4625 4950 4875
+Wire Wire Line
+	4950 4875 5650 4875
+Wire Wire Line
+	4850 4625 4850 4975
+Wire Wire Line
+	4850 4975 5650 4975
+Wire Wire Line
+	4950 3325 4950 3075
+Wire Wire Line
+	4950 3075 5175 3075
+Wire Wire Line
+	5175 3075 5175 4775
+Wire Wire Line
+	5175 4775 5650 4775
+Wire Wire Line
+	4850 3325 4850 2975
+Wire Wire Line
+	4850 2975 5275 2975
+Wire Wire Line
+	5275 2975 5275 4675
+Text Label 5625 4675 2    50   ~ 0
+SENSE
+Text Label 5625 4775 2    50   ~ 0
+READ
+Text Label 5625 4875 2    50   ~ 0
+MOTOR
+Text Label 5625 4975 2    50   ~ 0
+WRITE
+$Comp
+L power:GND #PWR0102
+U 1 1 626603C6
+P 6225 4225
+F 0 "#PWR0102" H 6225 3975 50  0001 C CNN
+F 1 "GND" H 6230 4052 50  0000 C CNN
+F 2 "" H 6225 4225 50  0001 C CNN
+F 3 "" H 6225 4225 50  0001 C CNN
+	1    6225 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 626605D3
+P 6675 4225
+F 0 "#PWR0103" H 6675 3975 50  0001 C CNN
+F 1 "GND" H 6680 4052 50  0000 C CNN
+F 2 "" H 6675 4225 50  0001 C CNN
+F 3 "" H 6675 4225 50  0001 C CNN
+	1    6675 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 4125 6150 4125
+Wire Wire Line
+	6750 4125 6675 4125
+$Comp
+L power:VCC #PWR0104
+U 1 1 626625E2
+P 6750 3550
+F 0 "#PWR0104" H 6750 3400 50  0001 C CNN
+F 1 "VCC" H 6765 3723 50  0000 C CNN
+F 2 "" H 6750 3550 50  0001 C CNN
+F 3 "" H 6750 3550 50  0001 C CNN
+	1    6750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5275 4675 5650 4675
+Text Label 6125 3725 2    50   ~ 0
+SENSE
+Text Label 6125 3925 2    50   ~ 0
+READ
+Text Label 6125 4025 2    50   ~ 0
+MOTOR
+Text Label 6775 4025 0    50   ~ 0
+MOTOR
+Text Label 6775 3925 0    50   ~ 0
+READ
+Text Label 6775 3725 0    50   ~ 0
+SENSE
+Text Label 6125 3825 2    50   ~ 0
+WRITE
+Text Label 6775 3825 0    50   ~ 0
+WRITE
+Wire Wire Line
+	5850 3725 6225 3725
+Wire Wire Line
+	5850 3825 6225 3825
+Wire Wire Line
+	5850 3925 6225 3925
+Wire Wire Line
+	5850 4025 6225 4025
+Wire Wire Line
+	6675 3725 7050 3725
+Wire Wire Line
+	6675 3825 7050 3825
+Wire Wire Line
+	6675 3925 7050 3925
+Wire Wire Line
+	6675 4025 7050 4025
+Entry Wire Line
+	7050 3725 7150 3825
+Entry Wire Line
+	7050 3825 7150 3925
+Entry Wire Line
+	7050 3925 7150 4025
+Entry Wire Line
+	7050 4025 7150 4125
+Entry Wire Line
+	5650 4975 5750 4875
+Entry Wire Line
+	5650 4875 5750 4775
+Entry Wire Line
+	5650 4775 5750 4675
+Entry Wire Line
+	5650 4675 5750 4575
+Entry Wire Line
+	5850 3725 5750 3825
+Entry Wire Line
+	5850 3825 5750 3925
+Entry Wire Line
+	5850 3925 5750 4025
+Entry Wire Line
+	5850 4025 5750 4125
+Wire Bus Line
+	5750 2975 7150 2975
+Wire Wire Line
+	6750 3550 6750 4125
+$Comp
+L power:VCC #PWR0105
+U 1 1 6267E6FC
+P 6150 3550
+F 0 "#PWR0105" H 6150 3400 50  0001 C CNN
+F 1 "VCC" H 6165 3723 50  0000 C CNN
+F 2 "" H 6150 3550 50  0001 C CNN
+F 3 "" H 6150 3550 50  0001 C CNN
+	1    6150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3550 6150 4125
+Wire Bus Line
+	7150 2975 7150 4125
+Wire Bus Line
+	5750 2975 5750 4875
+$EndSCHEMATC

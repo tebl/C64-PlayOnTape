@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# C64_Cassette_IDC
+# c64_cassette_C64_Cassette_IDC
 #
-DEF C64_Cassette_IDC J 0 100 Y Y 1 F N
+DEF c64_cassette_C64_Cassette_IDC J 0 100 Y Y 1 F N
 F0 "J" -400 675 60 H V C CNN
-F1 "C64_Cassette_IDC" 0 225 60 H V C CNN
+F1 "c64_cassette_C64_Cassette_IDC" 0 225 60 H V C CNN
 F2 "" -150 700 60 H I C CNN
 F3 "" -150 -1200 60 H I C CNN
 $FPLIST
@@ -30,43 +30,11 @@ X SENSE 6 -650 350 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# C64_Cassette_Input
+# c64_cassette_C64_Cassette_Port
 #
-DEF C64_Cassette_Input J 0 40 Y N 1 F N
+DEF c64_cassette_C64_Cassette_Port J 0 40 Y N 1 F N
 F0 "J" 0 375 60 H V C CNN
-F1 "C64_Cassette_Input" 0 225 60 H V C CNN
-F2 "" -250 -300 60 H I C CNN
-F3 "" -250 -300 60 H I C CNN
-DRAW
-T 900 250 -425 39 0 0 0 GND Normal 0 C C
-T 900 50 -425 39 0 0 0 MOTOR Normal 0 C C
-T 900 -50 -425 39 0 0 0 READ Normal 0 C C
-T 900 -250 -425 39 0 0 0 SENSE Normal 0 C C
-T 900 150 -425 39 0 0 0 VCC Normal 0 C C
-T 900 -150 -425 39 0 0 0 WRITE Normal 0 C C
-S 90 -325 110 -525 0 0 0 F
-S 100 -325 -425 -525 0 1 0 f
-S 100 -325 425 -525 0 1 0 f
-P 4 0 1 0 225 -325 225 -300 275 -300 275 -325 F
-P 4 1 1 0 -275 -325 -275 -300 -225 -300 -225 -325 F
-P 4 1 1 0 -175 -325 -175 -300 -125 -300 -125 -325 F
-P 4 1 1 0 -75 -325 -75 -300 -25 -300 -25 -325 F
-P 4 1 1 0 25 -325 25 -300 75 -300 75 -325 F
-P 4 1 1 0 125 -325 125 -300 175 -300 175 -325 F
-X GND 1 250 -200 100 D 50 50 1 1 W
-X VCC 2 150 -200 100 D 50 50 1 1 W
-X MOTOR 3 50 -200 100 D 50 50 1 1 W
-X READ 4 -50 -200 100 D 50 50 1 1 O
-X WRITE 5 -150 -200 100 D 50 50 1 1 I
-X SENSE 6 -250 -200 100 D 50 50 1 1 O
-ENDDRAW
-ENDDEF
-#
-# C64_Cassette_Port
-#
-DEF C64_Cassette_Port J 0 40 Y N 1 F N
-F0 "J" 0 375 60 H V C CNN
-F1 "C64_Cassette_Port" 0 225 60 H V C CNN
+F1 "c64_cassette_C64_Cassette_Port" 0 225 60 H V C CNN
 F2 "" -250 -300 60 H I C CNN
 F3 "" -250 -300 60 H I C CNN
 DRAW
@@ -103,6 +71,56 @@ X MOTOR C 50 -650 100 U 50 50 1 1 P
 X EREAD D -50 -650 100 U 50 50 1 1 P
 X WRITE E -150 -650 100 U 50 50 1 1 P
 X SENSE F -250 -650 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# mounting_Mounting
+#
+DEF mounting_Mounting M 0 40 Y N 1 F N
+F0 "M" 0 100 50 H I C CNN
+F1 "mounting_Mounting" 0 -75 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+C 0 0 25 0 1 0 N
+C 0 0 50 0 1 0 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 N N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
