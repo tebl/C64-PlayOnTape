@@ -1,4 +1,4 @@
-19059685627096167
+19054902847283613
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72568,20 +72568,6 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
-PlayOnTape
-C64-Cassette-Input
-Through hole straight pin header, 1x06, 2.54mm pitch, single row
-Through hole pin header THT 1x06 2.54mm single row
-0
-6
-6
-PlayOnTape
-C64-Cassette-Port
-
-
-0
-12
-12
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
@@ -83159,17 +83145,10 @@ DEV
 0
 1
 1
-pot_vertical
-Potentiometer_Trimmer_Bourns_3296W
-Spindle Trimmer Potentiometer, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf
-Spindle Trimmer Potentiometer   Bourns 3296W
+wire_pads
+OLED_SEL
+Through hole straight pin header, 1x03, 1.27mm pitch, single row
+Through hole pin header THT 1x03 1.27mm single row
 0
 3
 3
-sd_card_adapter
-MicroSD_Card_Adapter
-
-
-0
-6
-6
