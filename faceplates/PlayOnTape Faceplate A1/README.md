@@ -1,7 +1,7 @@
 # PlayOnTape Faceplate (A1)
 The faceplate doesn't do all that much except making it look *"really really cool"*, to quote a *"really really cool"* comedy about male supermodels (Zoolander by the way, please don't judge my sense of humour)! To be perfectly honest you could actually do without the thing entirely, as the OLED-display could potentially be installed on the main module instead - however, what would the fun be in building a unit that'd be considerably less than what it was supposed to be? I'll leave that bit of decision-making up to you.
 
-![Faceplate](https://github.com/tebl/8BIT-Wave/raw/master/gallery/build_faceplate_001.jpg)
+![Faceplate](https://github.com/tebl/C64-PlayOnTape/raw/main/gallery/build_faceplate_009.jpg)
 
 ## 1> Building the module
 Start by checking out the [BOM](#3-bom) and verify that you have the components needed before continuing, it's beyond frustrating to realize you need just that single item before being able to complete the build - with shipping times from China as they are, better to get it right the first time (if it's very cheap I tend to order several just in case one gets delayed somewhere).
