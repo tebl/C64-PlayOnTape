@@ -61,7 +61,7 @@ $Comp
 L Switch:SW_Push SW1
 U 1 1 61F81316
 P 11750 7925
-F 0 "SW1" H 11650 8025 50  0000 C CNN
+F 0 "SW1" H 11625 8050 50  0000 C CNN
 F 1 "PREV" H 11750 7825 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS" H 11750 7925 50  0001 C CNN
 F 3 "" H 11750 7925 50  0001 C CNN
@@ -72,7 +72,7 @@ $Comp
 L Switch:SW_Push SW3
 U 1 1 5E3B64F8
 P 11750 8625
-F 0 "SW3" H 11650 8725 50  0000 C CNN
+F 0 "SW3" H 11625 8750 50  0000 C CNN
 F 1 "STOP" H 11750 8525 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS" H 11750 8625 50  0001 C CNN
 F 3 "" H 11750 8625 50  0001 C CNN
@@ -83,7 +83,7 @@ $Comp
 L Switch:SW_Push SW4
 U 1 1 5E3B6550
 P 11750 8975
-F 0 "SW4" H 11650 9075 50  0000 C CNN
+F 0 "SW4" H 11625 9100 50  0000 C CNN
 F 1 "PLAY" H 11750 8875 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS" H 11750 8975 50  0001 C CNN
 F 3 "" H 11750 8975 50  0001 C CNN
@@ -142,12 +142,12 @@ Wire Wire Line
 $Comp
 L microsd_adapter:SD A2
 U 1 1 61F8131C
-P 13925 2300
-F 0 "A2" H 14175 2775 60  0000 C CNN
-F 1 "MicroSD Card Adapter" V 14025 2450 60  0000 C CNN
-F 2 "sd_card_adapter:MicroSD_Card_Adapter" H 13925 2300 60  0001 C CNN
-F 3 "" H 13925 2300 60  0001 C CNN
-	1    13925 2300
+P 13925 2100
+F 0 "A2" H 14125 2750 60  0000 C CNN
+F 1 "MicroSD Card Adapter" H 14125 2650 60  0000 C CNN
+F 2 "sd_card_adapter:MicroSD_Card_Adapter" H 13925 2100 60  0001 C CNN
+F 3 "" H 13925 2100 60  0001 C CNN
+	1    13925 2100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -262,12 +262,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0107
 U 1 1 5E3C13AD
-P 13100 2600
-F 0 "#PWR0107" H 13100 2350 50  0001 C CNN
-F 1 "GND" H 13100 2450 50  0000 C CNN
-F 2 "" H 13100 2600 50  0001 C CNN
-F 3 "" H 13100 2600 50  0001 C CNN
-	1    13100 2600
+P 13100 2400
+F 0 "#PWR0107" H 13100 2150 50  0001 C CNN
+F 1 "GND" H 13100 2250 50  0000 C CNN
+F 2 "" H 13100 2400 50  0001 C CNN
+F 3 "" H 13100 2400 50  0001 C CNN
+	1    13100 2400
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -283,22 +283,22 @@ F 3 "" H 11450 10875 50  0001 C CNN
 $EndComp
 Text Notes 15400 11075 0    60   ~ 0
 A
-Text GLabel 12450 2000 0    60   Input ~ 0
+Text GLabel 12450 1800 0    60   Input ~ 0
 SD_CS
 Wire Wire Line
-	12450 2000 12525 2000
-Text GLabel 12450 2100 0    60   Input ~ 0
+	12450 1800 12525 1800
+Text GLabel 12450 1900 0    60   Input ~ 0
 SD_SCK
 Wire Wire Line
-	12450 2100 12525 2100
-Text GLabel 12450 2200 0    60   Input ~ 0
+	12450 1900 12525 1900
+Text GLabel 12450 2000 0    60   Input ~ 0
 SD_MOSI
-Text GLabel 12450 2300 0    60   Output ~ 0
+Text GLabel 12450 2100 0    60   Output ~ 0
 SD_MISO
 Wire Wire Line
-	12450 2300 12525 2300
+	12450 2100 12525 2100
 Wire Wire Line
-	12450 2200 12525 2200
+	12450 2000 12525 2000
 Text GLabel 13450 5950 2    60   Input ~ 0
 OLED_SDA
 Text GLabel 13450 6050 2    60   Input ~ 0
@@ -330,8 +330,6 @@ Wire Notes Line
 	14325 5150 14325 7100
 Text Notes 11650 5250 0    60   ~ 0
 Faceplate connectors
-Text Notes 11700 6575 0    39   ~ 0
-This section does not make sense at\nthe moment, it was merely copied\noff in order to use the faceplate from\na different project (8Bit Wave).
 Wire Notes Line
 	14325 3025 14325 4975
 Wire Notes Line
@@ -403,7 +401,7 @@ Wire Notes Line
 	8575 9675 8575 7275
 Wire Notes Line
 	3000 7275 3000 9675
-Text Notes 3025 7375 0    60   ~ 0
+Text Notes 3075 7400 0    60   ~ 0
 Display options
 $Comp
 L Device:CP_Small C1
@@ -439,7 +437,7 @@ $Comp
 L Switch:SW_Push SW2
 U 1 1 5E3B64CB
 P 11750 8275
-F 0 "SW2" H 11650 8375 50  0000 C CNN
+F 0 "SW2" H 11625 8400 50  0000 C CNN
 F 1 "NEXT" H 11750 8175 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS" H 11750 8275 50  0001 C CNN
 F 3 "" H 11750 8275 50  0001 C CNN
@@ -544,63 +542,6 @@ F 3 "" H 7850 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L c64_cassette:C64_Cassette_Port J2
-U 1 1 622FB741
-P 5325 3775
-F 0 "J2" H 5325 2950 60  0000 C CNN
-F 1 "DATASETTE" H 5325 3050 60  0000 C CNN
-F 2 "PlayOnTape:C64-Cassette-Port" H 5075 3475 60  0001 C CNN
-F 3 "" H 5075 3475 60  0001 C CNN
-	1    5325 3775
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 4025 4675 4025
-Wire Wire Line
-	4675 3925 4650 3925
-Wire Wire Line
-	4650 3925 4650 3950
-Wire Wire Line
-	4675 3825 4650 3825
-Wire Wire Line
-	4650 3825 4650 3850
-Wire Wire Line
-	4650 3850 5150 3850
-Wire Wire Line
-	5150 3850 5150 3825
-Wire Wire Line
-	5150 3825 5125 3825
-Wire Wire Line
-	5125 3725 5150 3725
-Wire Wire Line
-	5150 3725 5150 3750
-Wire Wire Line
-	5150 3750 4650 3750
-Wire Wire Line
-	4650 3750 4650 3725
-Wire Wire Line
-	4650 3725 4675 3725
-Wire Wire Line
-	4675 3625 4650 3625
-Wire Wire Line
-	4650 3625 4650 3650
-Wire Wire Line
-	4650 3650 5150 3650
-Wire Wire Line
-	5150 3650 5150 3625
-Wire Wire Line
-	5150 3625 5125 3625
-Wire Wire Line
-	4675 3525 4650 3525
-Wire Wire Line
-	4650 3525 4650 3550
-Wire Wire Line
-	4650 3550 5150 3550
-Wire Wire Line
-	5150 3550 5150 3525
-Wire Wire Line
-	5150 3525 5125 3525
-$Comp
 L power:+5V #PWR0109
 U 1 1 62335C4B
 P 5300 3450
@@ -621,8 +562,6 @@ Wire Wire Line
 Wire Wire Line
 	5125 3925 5200 3925
 Wire Wire Line
-	5200 3950 4650 3950
-Wire Wire Line
 	5300 4025 5300 4200
 $Comp
 L power:GND #PWR0114
@@ -635,17 +574,6 @@ F 3 "" H 5300 4200 50  0001 C CNN
 	1    5300 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5125 4025 5200 4025
-Wire Wire Line
-	5200 4075 4650 4075
-Wire Wire Line
-	5200 4025 5200 4075
-Connection ~ 5200 4025
-Wire Wire Line
-	5200 4025 5300 4025
-Wire Wire Line
-	4650 4025 4650 4075
 $Comp
 L 4xxx:4052 U2
 U 1 1 6240B199
@@ -737,11 +665,6 @@ F 3 "" H 6950 3825 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5700 3725 5700 5725
-Connection ~ 5150 3525
-Wire Wire Line
-	5150 3725 5700 3725
-Connection ~ 5150 3725
-Connection ~ 5150 3825
 Wire Wire Line
 	5400 5225 5550 5225
 Wire Wire Line
@@ -749,12 +672,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 5725 5700 5725
 Wire Wire Line
-	5150 3625 5475 3625
-Wire Wire Line
-	5475 3625 5475 5325
-Wire Wire Line
 	5475 5325 5400 5325
-Connection ~ 5150 3625
 Wire Wire Line
 	5400 6325 5550 6325
 Wire Wire Line
@@ -791,12 +709,12 @@ NoConn ~ 8775 4425
 $Comp
 L power:+5V #PWR0105
 U 1 1 626766DA
-P 13100 1675
-F 0 "#PWR0105" H 13100 1525 50  0001 C CNN
-F 1 "+5V" H 13100 1815 50  0000 C CNN
-F 2 "" H 13100 1675 50  0001 C CNN
-F 3 "" H 13100 1675 50  0001 C CNN
-	1    13100 1675
+P 13100 1475
+F 0 "#PWR0105" H 13100 1325 50  0001 C CNN
+F 1 "+5V" H 13100 1615 50  0000 C CNN
+F 2 "" H 13100 1475 50  0001 C CNN
+F 3 "" H 13100 1475 50  0001 C CNN
+	1    13100 1475
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -895,8 +813,6 @@ Wire Wire Line
 Text Label 6700 3825 2    60   ~ 0
 MOTOR
 Wire Wire Line
-	5150 3525 5925 3525
-Wire Wire Line
 	8700 4025 8775 4025
 Text GLabel 5925 3525 2    60   Output ~ 0
 SENSE
@@ -908,8 +824,6 @@ Text GLabel 8700 3725 0    60   Output ~ 0
 RECORD
 Wire Wire Line
 	8700 3725 8775 3725
-Wire Wire Line
-	5150 3825 6725 3825
 Connection ~ 6725 3825
 Wire Wire Line
 	6725 3825 6800 3825
@@ -971,100 +885,190 @@ $EndComp
 Wire Wire Line
 	4800 1175 5925 1175
 Wire Wire Line
-	13650 4375 13575 4375
+	13675 4100 13600 4100
 Wire Wire Line
-	13250 3850 13250 3775
+	13275 3575 13275 3500
 Wire Wire Line
-	12900 4375 12975 4375
-Text GLabel 12900 4375 0    60   Input ~ 0
+	12925 4100 13000 4100
+Text GLabel 12925 4100 0    60   Input ~ 0
 RECORD
 Wire Wire Line
-	13175 4375 13275 4375
+	13200 4100 13300 4100
 $Comp
 L Device:R R2
 U 1 1 6286498B
-P 13425 4375
-F 0 "R2" V 13505 4375 50  0000 C CNN
-F 1 "330" V 13425 4375 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 13355 4375 50  0001 C CNN
-F 3 "" H 13425 4375 50  0001 C CNN
-	1    13425 4375
+P 13450 4100
+F 0 "R2" V 13530 4100 50  0000 C CNN
+F 1 "330" V 13450 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 13380 4100 50  0001 C CNN
+F 3 "" H 13450 4100 50  0001 C CNN
+	1    13450 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED_Small D2
 U 1 1 6285D653
-P 13075 4375
-F 0 "D2" H 13025 4500 50  0000 L CNN
-F 1 "RECORD" H 12950 4300 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm" V 13075 4375 50  0001 C CNN
-F 3 "" V 13075 4375 50  0001 C CNN
-	1    13075 4375
+P 13100 4100
+F 0 "D2" H 13050 4225 50  0000 L CNN
+F 1 "RECORD" H 12975 4025 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" V 13100 4100 50  0001 C CNN
+F 3 "" V 13100 4100 50  0001 C CNN
+	1    13100 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0108
 U 1 1 6268BB23
-P 12500 3700
-F 0 "#PWR0108" H 12500 3550 50  0001 C CNN
-F 1 "+5V" H 12500 3840 50  0000 C CNN
-F 2 "" H 12500 3700 50  0001 C CNN
-F 3 "" H 12500 3700 50  0001 C CNN
-	1    12500 3700
+P 12525 3425
+F 0 "#PWR0108" H 12525 3275 50  0001 C CNN
+F 1 "+5V" H 12525 3565 50  0000 C CNN
+F 2 "" H 12525 3425 50  0001 C CNN
+F 3 "" H 12525 3425 50  0001 C CNN
+	1    12525 3425
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12500 3775 12575 3775
+	12525 3500 12600 3500
 Wire Wire Line
-	12500 3700 12500 3775
+	12525 3425 12525 3500
 Wire Wire Line
-	12975 3775 12875 3775
+	13000 3500 12900 3500
 $Comp
 L power:GND #PWR017
 U 1 1 61F81323
-P 13250 3850
-F 0 "#PWR017" H 13250 3600 50  0001 C CNN
-F 1 "GND" H 13250 3700 50  0000 C CNN
-F 2 "" H 13250 3850 50  0001 C CNN
-F 3 "" H 13250 3850 50  0001 C CNN
-	1    13250 3850
+P 13275 3575
+F 0 "#PWR017" H 13275 3325 50  0001 C CNN
+F 1 "GND" H 13275 3425 50  0000 C CNN
+F 2 "" H 13275 3575 50  0001 C CNN
+F 3 "" H 13275 3575 50  0001 C CNN
+	1    13275 3575
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED_Small D1
 U 1 1 61F8131F
-P 13075 3775
-F 0 "D1" H 13025 3900 50  0000 L CNN
-F 1 "POWER" H 12950 3700 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm" V 13075 3775 50  0001 C CNN
-F 3 "" V 13075 3775 50  0001 C CNN
-	1    13075 3775
+P 13100 3500
+F 0 "D1" H 13050 3625 50  0000 L CNN
+F 1 "POWER" H 12975 3425 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" V 13100 3500 50  0001 C CNN
+F 3 "" V 13100 3500 50  0001 C CNN
+	1    13100 3500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	13250 3775 13175 3775
+	13275 3500 13200 3500
 $Comp
 L Device:R R6
 U 1 1 5E3CE04C
-P 12725 3775
-F 0 "R6" V 12805 3775 50  0000 C CNN
-F 1 "330" V 12725 3775 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12655 3775 50  0001 C CNN
-F 3 "" H 12725 3775 50  0001 C CNN
-	1    12725 3775
+P 12750 3500
+F 0 "R6" V 12830 3500 50  0000 C CNN
+F 1 "330" V 12750 3500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12680 3500 50  0001 C CNN
+F 3 "" H 12750 3500 50  0001 C CNN
+	1    12750 3500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	13650 4300 13650 4375
+	13675 4025 13675 4100
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0122
 U 1 1 626A059A
-P 13650 4300
-F 0 "#PWR?" H 13650 4150 50  0001 C CNN
-F 1 "+5V" H 13650 4440 50  0000 C CNN
-F 2 "" H 13650 4300 50  0001 C CNN
-F 3 "" H 13650 4300 50  0001 C CNN
-	1    13650 4300
+P 13675 4025
+F 0 "#PWR0122" H 13675 3875 50  0001 C CNN
+F 1 "+5V" H 13675 4165 50  0000 C CNN
+F 2 "" H 13675 4025 50  0001 C CNN
+F 3 "" H 13675 4025 50  0001 C CNN
+	1    13675 4025
 	1    0    0    -1  
 $EndComp
+Text Notes 11700 4775 0    60   ~ 0
+These resistor values are suitable for your average\ncheap LEDs, but not any of the bright or clear LEDs.\nIdeally you'd want to calculate the correct values\nbased on the datasheet for your LEDs.
+Wire Wire Line
+	5200 3825 5200 3850
+Connection ~ 5200 3825
+Wire Wire Line
+	5200 3825 6725 3825
+Wire Wire Line
+	5125 3825 5200 3825
+Wire Wire Line
+	5200 3725 5200 3750
+Wire Wire Line
+	5200 3725 5700 3725
+Wire Wire Line
+	5125 3725 5200 3725
+Connection ~ 5200 3725
+Wire Wire Line
+	5200 3625 5200 3650
+Wire Wire Line
+	5200 3625 5475 3625
+Wire Wire Line
+	5125 3625 5200 3625
+Connection ~ 5200 3625
+Wire Wire Line
+	5125 3525 5200 3525
+Wire Wire Line
+	5200 3550 5200 3525
+Connection ~ 5200 3525
+Wire Wire Line
+	5200 3525 5925 3525
+Wire Wire Line
+	4675 3525 4600 3525
+Wire Wire Line
+	4600 3525 4600 3550
+Wire Wire Line
+	4600 3550 5200 3550
+Wire Wire Line
+	4600 3625 4600 3650
+Wire Wire Line
+	4600 3650 5200 3650
+Wire Wire Line
+	5475 3625 5475 5325
+$Comp
+L c64_cassette:C64_Cassette_Port J2
+U 1 1 622FB741
+P 5325 3775
+F 0 "J2" H 5325 2900 60  0000 C CNN
+F 1 "DATASETTE" H 5325 3000 60  0000 C CNN
+F 2 "PlayOnTape:C64-Cassette-Port" H 5075 3475 60  0001 C CNN
+F 3 "" H 5075 3475 60  0001 C CNN
+	1    5325 3775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4675 3625 4600 3625
+Wire Wire Line
+	4600 3725 4600 3750
+Wire Wire Line
+	4600 3725 4675 3725
+Wire Wire Line
+	4600 3750 5200 3750
+Wire Wire Line
+	4600 3825 4600 3850
+Wire Wire Line
+	4600 3825 4675 3825
+Wire Wire Line
+	4600 3850 5200 3850
+Wire Wire Line
+	4600 3925 4600 3950
+Wire Wire Line
+	4600 3925 4675 3925
+Wire Wire Line
+	4600 3950 5200 3950
+Wire Wire Line
+	4600 4025 4675 4025
+Wire Wire Line
+	5125 4025 5200 4025
+Wire Wire Line
+	5200 4025 5200 4050
+Wire Wire Line
+	5200 4050 4600 4050
+Wire Wire Line
+	4600 4050 4600 4025
+Connection ~ 5200 4025
+Wire Wire Line
+	5200 4025 5300 4025
+Text Notes 11700 6575 0    39   ~ 0
+This section does not make sense at\nthe moment, it was merely copied\noff in order to use the faceplate from\na different project (8Bit Wave).
+Text Notes 3075 7725 0    60   ~ 0
+An OLED can be installed here, but the\noption was only provided for those\ncases where you do not want a faceplate.
 $EndSCHEMATC

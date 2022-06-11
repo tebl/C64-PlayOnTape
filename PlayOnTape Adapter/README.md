@@ -3,7 +3,7 @@ Originally I designed the [C64 PlayOnTape](https://github.com/tebl/C64-PlayOnTap
 
 ![Completed unit](https://github.com/tebl/C64-PlayOnTape/raw/main/gallery/build_adapter_004.jpg)
 
-- [PlayOnTape Faceplate (A1)](#playontape-faceplate-a1)
+- [PlayOnTape Adapter](#playontape-adapter)
   - [1> Building the module](#1-building-the-module)
   - [2> Schematic](#2-schematic)
   - [3> BOM](#3-bom)

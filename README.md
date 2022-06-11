@@ -14,9 +14,9 @@ For the technical details as well as information regarding the modules included 
 
 | Module                 | Required    | Documentation                      | Order      |
 | ---------------------- | ----------- | ---------------------------------- | ---------- |
-| [C64 PlayOnTape Module](https://github.com/tebl/C64-PlayOnTape/tree/main/PlayOnTape%20Module) | Yes         |                                    | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_7281e4c0.html)
-| [C64 PlayOnTape Adapter](https://github.com/tebl/C64-PlayOnTape/tree/main/PlayOnTape%20Adapter) | Yes         |                                    | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_Adapter_6b7e3197.html)
-| [PlayOnTape Backplate](https://github.com/tebl/C64-PlayOnTape/tree/main/faceplates/PlayOnTape%20Backplate) | No          |                                    | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_Backplate_04d028fa.html)
+| [C64 PlayOnTape Module](https://github.com/tebl/C64-PlayOnTape/tree/main/PlayOnTape%20Module) | Yes | | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_7281e4c0.html)
+| [C64 PlayOnTape Adapter](https://github.com/tebl/C64-PlayOnTape/tree/main/PlayOnTape%20Adapter) | Yes | [Documentation](https://github.com/tebl/C64-PlayOnTape/blob/main/PlayOnTape%20Adapter/README.md), [BOM](https://github.com/tebl/C64-PlayOnTape/blob/main/PlayOnTape%20Adapter/README.md#3-bom) | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_Adapter_6b7e3197.html)
+| [PlayOnTape Backplate](https://github.com/tebl/C64-PlayOnTape/tree/main/faceplates/PlayOnTape%20Backplate) | No | | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_Backplate_04d028fa.html)
 | [PlayOnTape Faceplate (A1)](https://github.com/tebl/C64-PlayOnTape/tree/main/faceplates/PlayOnTape%20Faceplate%20A1) | Recommended | [Documentation](https://github.com/tebl/C64-PlayOnTape/blob/main/faceplates/PlayOnTape%20Faceplate%20A1/README.md), [BOM](https://github.com/tebl/C64-PlayOnTape/blob/main/faceplates/PlayOnTape%20Faceplate%20A1/README.md#3-bom) | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_Faceplate_FA1_dac67ded.html)
 
 ## 1.2> Acknowledgements
