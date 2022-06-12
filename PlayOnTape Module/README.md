@@ -7,6 +7,9 @@ This is the main module, containing most if not all of the electronic circuit ne
 
 - [PlayOnTape Module](#playontape-module)
   - [1> Building the module](#1-building-the-module)
+    - [1.1> Installing the display](#11-installing-the-display) 
+    - [1.2> Installing the firmware](#12-installing-the-firmware)
+    - [1.3> Finishing steps](#13-finishing-steps)
   - [2> Schematic](#2-schematic)
   - [3> BOM](#3-bom)
 
@@ -41,6 +44,8 @@ The board also features a single electrolytic capacitor that we should probably 
 
 The Arduino Nano is attached to the board using standard male pin-headers, these need to be soldered in somewhat straight - or - you may encounter soldering in the Arduino itself. The pin headers on the far-right have also been added, these are used to connect the signals required by the faceplate. 
 
+**NB!** If you have a relatively high expectation in regards to the quality of your components, then there is the option of constructing a device that is slightly thinner. The process is simply to install 8mm hex standoffs, trimming the tops of the Arduino pins, then soldering the longer variety of the pin headers for the right-most pins directly to the faceplate instead of making it detachable (you may need to use longer pin headers or a small section of ribbon cable). Understandably enough, you'd hold off on doing this until every other component has been fitted.
+
 ![Build 008](https://github.com/tebl/C64-PlayOnTape/raw/main/gallery/build_module_008.jpg)
 
 The Arduino is then inserted onto the pins, then soldered into place though experience should tell us that we should at least test the device before soldering it onto a board - an easy enough test is to simply check that we are able to compile and upload a *blink*-sketch to it beforehand. The remaining ICs are then inserted into the sockets, ensuring that the indent, or dot in the case of the 4N35, is matched up with the indent found on the sockets.
@@ -56,7 +61,7 @@ When used without a faceplate, both of these will work the same when installed o
 
 Given the need for the display to clear the *MicroSD Card Adapter* already soldered to the board, I suggest soldering some female pin headers to the board and insert the display onto those pin headers. If you require some mechanical support to the display, you can install a M2 nylon hex standoff to the right side of the display (the mounting hole on the board will only align with the *original*-type of display shown earlier) 
 
-## 1.2> Installing firmware
+## 1.2> Installing the firmware
 Installing, or updating for that matter, the firmware is accomplished through the [Arduino IDE](https://www.arduino.cc/en/software). Start by downloading a copy of the sketch supplied by its original author, it's on [github](https://github.com/sweetlilmre/tapuino) and can simply click the green *Code*-button and then select *Download ZIP*. Extract somewhere that you'll be able to locate at a later point in time.
 
 Within the directory of files you just extracted, remembering how I just seconds ago to you to put it somewhere that you'd be able to locate them again? All good? Cracking on then. Start by renaming the file called *config-user.h.example* to *config-user.h*, depending on your choice of operating system you may need to explicitly tell it to actually show you the extensions for the file. Why Microsoft constantly chooses to make things more difficult? I'll probably never know.
@@ -78,7 +83,15 @@ With the board connected to your computer using a USB-cable, select the *port* p
 
 If all goes well, your *C64 PlayOnTape* should initialize the display and potentially give you an error stating that it failed to initialize - this just means that an SD-card has not been inserted into the slot (remember that since we installed the upside down, we need to insert the card upside down as well). Detach the USB-cable and set it aside, we won't be needing that anymore.
 
-**NB!** The *C64 PlayOnTape* should not be connected to your computer via the USB-cable when used with a Commodore 64, something'll probably break from attempting to do so.
+**NB!** The *C64 PlayOnTape* should not be connected to your computer via the USB-cable when used with a Commodore 64. You might kill your Commodore 64, you might kill your laptop - so it is probably best not to.
+
+## 1.3> Finishing steps
+The last steps as should be expected is adding some screws on top to hold the faceplate firmly in place, connect it to the cable adapter using a 6-pin IDC cable and then connect it to you Commodore 64 with everything else powered off. With an SD-card inserted with some TAP-files ready to go, you can just select one and get to using it.
+
+![Getting started](https://github.com/tebl/C64-PlayOnTape/raw/main/gallery/2022-05-22%2000.33.10.jpg
+)
+
+A simple guide on [getting started](https://github.com/tebl/C64-PlayOnTape/blob/main/documentation/getting_started.md) have been put together in order to cover this in slightly greater detail, check it out if you need a refresher on topics not already covered.
 
 # 2> Schematic
 The supplied KiCad files should be sufficient as both a schematic and as a  starting point for ordering PCBs (basically you could just zip the contents of the export folder and upload that on a fabrication site), the schematic is also available in [PDF-format](https://github.com/tebl/C64-PlayOnTape/tree/main/documentation/schematic) found within the schematics-part of the [documentation](https://github.com/tebl/C64-PlayOnTape/tree/main/documentation).
@@ -88,8 +101,25 @@ Most parts should be easy to get a hold of from your favourite local electronic 
 
 | Reference    | Item                                                 | Count | Order |
 | ------------ | ---------------------------------------------------- | ----- | ----- |
-| PCB          | Fabricate using Gerber files                         |    (1)| [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_Adapter_6b7e3197.html)
+| PCB          | Fabricate using Gerber files                         |    (1)| [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_7281e4c0.html)
+| A1           | Arduino Nano (ATMega328)                             |     1 |
+| A2           | MicroSD Card Adapter                                 |     1 |
+| C1           | 220uF electrolytic capacitor (6.3mm x 2.5mm)         |     1 |
+| C2           | 100nF ceramic capacitor (5mm)                        |     1 |
+| D1,D2        | 5mm LEDs, preferably bright clear variety            |    (2)|
+| IC1          | 128x64 I2C OLED display                              |    (1)|
 | J1 *         | 2x3 pin straight male IDC-socket                     |     1 |
-| J2           | 12-pin 805-series 3.96mm card edge connector         |     1 |
+| J3           | 7-pin male straight pin header                       |     1 |
+| J5           | 3-pin male straight pin header                       |     1 |
+| R1           | 330 ohm resistor                                     |     1 |
+| R2,R6 **     | 330 ohm resistor                                     |    (2)|
+| SW1-SW4      | 6x6x5mm right-angle momentary button                 |     4 |
+| U1           | 4N35 optocoupler (DIP-6)                             |     1 |
+| U2           | CD4052 (DIP-16)                                      |     1 |
+| Mounting *** | Nylon M3 hex standoffs 10mm (M-F)                    |     4 |
+| Mounting *** | Nylon M3 nylon nuts                                  |     4 |
+| Mounting *** | Nylon M3x6mm nylon screws                            |     4 |
 
 *) This could be replaced by standard male pin headers if you wanted to, but using the keyed IDC-connector is recommended in order to avoid accidents.
+**) Resistor needs to have a value suitable for use with the type of LED installed. For modern bright LEDs consider using a value from 1k to 3k3 to avoid being completely blinded, better yet - check the datasheet and do the math.
+***) These are used in various places of the project, these are available in the form of kits usually advertised *M3 nylon standoff kit* which should contain most of what you'd need.
