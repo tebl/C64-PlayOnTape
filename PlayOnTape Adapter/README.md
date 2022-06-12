@@ -33,8 +33,9 @@ Most parts should be easy to get a hold of from your favourite local electronic 
 
 | Reference    | Item                                                 | Count | Order |
 | ------------ | ---------------------------------------------------- | ----- | ----- |
-| PCB          | Fabricate using Gerber files                         |    (1)| [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_Adapter_6b7e3197.html)
+| PCB          | Fabricate using Gerber files                         |     1 | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_Adapter_6b7e3197.html)
 | J1 *         | 2x3 pin straight male IDC-socket                     |     1 |
 | J2           | 12-pin 805-series 3.96mm card edge connector         |     1 |
+| Cable        | 6-pin IDC cable                                      |     1 |
 
 *) This could be replaced by standard male pin headers if you wanted to, but using the keyed IDC-connector is recommended in order to avoid accidents.

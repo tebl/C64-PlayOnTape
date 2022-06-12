@@ -101,7 +101,7 @@ Most parts should be easy to get a hold of from your favourite local electronic 
 
 | Reference    | Item                                                 | Count | Order |
 | ------------ | ---------------------------------------------------- | ----- | ----- |
-| PCB          | Fabricate using Gerber files                         |    (1)| [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_7281e4c0.html)
+| PCB          | Fabricate using Gerber files                         |     1 | [PCBWay](https://www.pcbway.com/project/shareproject/C64_PlayOnTape_7281e4c0.html)
 | A1           | Arduino Nano (ATMega328)                             |     1 |
 | A2           | MicroSD Card Adapter                                 |     1 |
 | C1           | 220uF electrolytic capacitor (6.3mm x 2.5mm)         |     1 |
@@ -116,6 +116,7 @@ Most parts should be easy to get a hold of from your favourite local electronic 
 | SW1-SW4      | 6x6x5mm right-angle momentary button                 |     4 |
 | U1           | 4N35 optocoupler (DIP-6)                             |     1 |
 | U2           | CD4052 (DIP-16)                                      |     1 |
+| Cable        | 6-pin IDC cable                                      |     1 |
 | Mounting *** | Nylon M3 hex standoffs 10mm (M-F)                    |     4 |
 | Mounting *** | Nylon M3 nylon nuts                                  |     4 |
 | Mounting *** | Nylon M3x6mm nylon screws                            |     4 |
